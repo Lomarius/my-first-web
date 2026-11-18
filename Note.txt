@@ -35,7 +35,26 @@ git push -u origin dev
 เข้า git checkout ชื่อกิ่งที่มีอยู่
 สร้าง + เข้า git checkout -b ชื่อกิ่งใหม่
 เปลี่ยนชื่อ git branch -m ชื่อใหม่ที่ต้องการ
-ส่งกิ่งใหม่ขึ้น GitHub git push -u origin ชื่อกิ่ง
+ส่งกิ่งใหม่ขึ้น GitHub git push -u origin ชื่อกิ่ง / git push -u origin HEAD
 ดึงข้อมูลล่าสุด git pull
 ลบกิ่งทิ้งในเครื่องคอมพิวเตอร์ git branch -d ชื่อกิ่งที่จะลบ
 ลบกิ่งทิ้งบนเว็บไซต์ GitHub git push origin --delete ชื่อกิ่งที่จะลบ
+
+ส่วน New Work 6
+1.ออกจากงานเดิม สร้างงานใหม่
+cd ..
+mkdir ชื่อไฟล์งาน
+cd ชื่อไฟล์งาน
+2.ขึ้นโครงด้วย Vite
+npm create vite@latest .
+3.เปิดระบบ VS ใหม่
+npm install
+code .
+4. เชื่อมต่อ GitHub และสร้างกิ่ง dev
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin วางลิงก์_git_ของโปรเจกต์ใหม่ตรงนี้
+git push -u origin main
+git checkout -b dev
