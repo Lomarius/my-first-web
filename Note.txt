@@ -1,0 +1,31 @@
+ส่วนเตรียมการ 1
+1.Node.js(รุ่น LTS)
+2.Vistual studio code
+3.Git
+4.เปิด Terminal รัน
+git config --global user.email "prommadajNarongrit@example.com"
+git config --global user.name "Lomarius"
+
+ส่วนสร้างงาน 2
+1.เปิด Terminal รัน
+mkdir ชื่อโปรเจกต์ใหม่
+cd ชื่อโปรเจกต์ใหม่
+2.npm create vite@latest .
+3.npm install
+4.npm run dev
+
+ส่วนเชื่อมต่อ 3
+เปิด Terminal รัน
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin ลิงก์_git_ที่ก๊อปปี้มา
+git push -u origin main
+ป้องกันงานหลัก
+git checkout -b dev
+
+ส่วน routeen 4
+git add .
+git commit -m "อธิบายสิ่งที่แก้ไขสั้นๆ"
+git push -u origin dev
