@@ -29,3 +29,13 @@ git checkout -b dev
 git add .
 git commit -m "อธิบายสิ่งที่แก้ไขสั้นๆ"
 git push -u origin dev
+
+ส่วน branch 5
+ดูรายชื่อ git branch
+เข้า git checkout ชื่อกิ่งที่มีอยู่
+สร้าง + เข้า git checkout -b ชื่อกิ่งใหม่
+เปลี่ยนชื่อ git branch -m ชื่อใหม่ที่ต้องการ
+ส่งกิ่งใหม่ขึ้น GitHub git push -u origin ชื่อกิ่ง
+ดึงข้อมูลล่าสุด git pull
+ลบกิ่งทิ้งในเครื่องคอมพิวเตอร์ git branch -d ชื่อกิ่งที่จะลบ
+ลบกิ่งทิ้งบนเว็บไซต์ GitHub git push origin --delete ชื่อกิ่งที่จะลบ
