@@ -1,4 +1,5 @@
 import React from 'react'
+import './Homepage.css'
 
 function Homepage() {
     return (
@@ -7,29 +8,20 @@ function Homepage() {
                 display: 'flex',
                 flexDirection: 'column',
                 minHeight: '100vh',
-                fontFamily: 'sans-serif',
             }}
         >
-            <header
-                style={{
-                    color: 'white',
-                    padding: '20px',
-                    textAlign: 'center',
-                    backgroundColor: '#0077ff',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                }}
-            >
-                <h2 style={{ margin: 0 }}>AQUAEXOTIC</h2>
-                <input style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    gap: '12px',
-                    borderRadius: '10px',
-                }} type="text" placeholder="Search..." />
-                <button>Search</button>
-                <button>Search</button>
+            <header className="page-container">
+                <div className="logo-container">
+                    <img className="logo-image" src="/images/Logo.png" alt="AQUAEXOTIC Logo" />
+                    <h2 className="homepage-title">AQUAEXOTIC</h2>
+                </div>
+
+                <input className="search-container" type="text" placeholder="Search..." />
+                
+                <div className="button-container">
+                    <button>Search</button>
+                    <button>Search</button>
+                </div>
             </header>
         </div>
     )
